@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* basic page */
+:root {
+  --accent: #4f46e5; /* indigo-600 */
+  --muted: #6b7280;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+html, body, #root { height: 100%; }
+body {
+  @apply bg-gradient-to-b from-gray-50 to-white;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #1f2937;
+}
+
+/* card shadow variant */
+.card {
+  @apply bg-white rounded-2xl shadow-sm;
+}
+
+/* improved table */
+.table-header {
+  @apply text-left text-sm text-gray-500 tracking-wide;
+}
+.table-row {
+  @apply border-t last:border-b;
+}
